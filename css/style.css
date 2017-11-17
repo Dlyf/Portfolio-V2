@@ -1,0 +1,328 @@
+/*  VISUALISATION DES BLOCS  */
+
+/*div, header, section, article, aside, nav {
+	border: 1px dashed rgba(0,0,0,0.15);
+	background-color: rgba(0,0,0,0.05);
+}*/
+
+/*.clear {
+	border: 1px dashed red;
+}*/
+
+
+/* GENERAL */
+
+
+
+html, body {
+	background: #ECEEF2;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul,ol
+{
+    list-style: none;
+}
+
+section {
+	padding: 45px 0 80px 0;
+}
+
+section .heading
+{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+section .heading h2
+{
+    text-transform: uppercase;
+}
+
+.red-divider
+{
+    width:100px;
+    height: 2px;
+    background: #d82c2e;
+    margin: 0 auto;
+}
+
+.white-divider
+{
+    width:100px;
+    height: 2px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.chart-container {
+  position: relative;
+
+}
+
+.button1
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    display: inline-block;
+    margin-top:  20px;
+    padding: 18px 50px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s;
+	background: transparent;
+}
+
+.button1:hover
+{
+    background: #FFF;
+    color: #d82c2e;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+	background: #151E2C;
+}
+
+p {
+    margin: 0;
+}
+
+
+/* MENU */
+
+#myNavbar.collapse.navbar-collapse, nav.navbar.affix-top, nav.navbar.affix {
+	background: #FF1541;
+}
+nav.navbar.affix-top {
+	background: #FF1541;
+	border-radius: 0;
+	margin-bottom: 0;
+
+}
+
+.navbar
+{
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+
+}
+.navbar .navbar-nav
+{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+.navbar .navbar-collapse
+{
+    text-align: center;
+}
+.navbar li a
+{
+    color: #fff;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a
+{
+    color: #FF1541;
+    background-color: #FF1541;
+}
+
+.navbar-default .navbar-toggle
+{
+    border-style: none;
+	background: #ECEEF2;
+}
+
+.icon-bar
+{
+    background: #FFF;
+}
+
+#home {
+	text-align: center;
+}
+
+.profil h1 {
+
+	color: #fff;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.profil p {
+	display: inline-block;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20px;
+	padding-top: 17px;
+	margin-bottom: 40px;
+}
+
+/* NAVBAR fixe */
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+/* MAIN */
+
+main {
+	background: #ECEEF2;
+}
+
+/* EDUCATION */
+#education
+{
+    background: #ECEEF2;
+}
+#education .heading h2
+{
+    color: #d82c2e;
+}
+.education-block
+{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 30px;
+		background: #fff;
+		border-radius: 0;
+		border: 1px solid #ccc;
+		height: 385px;
+		margin-bottom: 20px;
+		box-shadow: grey 8px 10px 4px -8px;
+}
+
+
+
+}
+.education-block h5
+{
+    color: #888;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.education-block .glyphicon
+{
+    font-size: 40px;
+}
+.education-block h3
+{
+     color: #d82c2e;
+}
+.education-block h4
+{
+   margin-bottom: 20px;
+}
+.education-block p
+{
+  font-weight: bold;
+}
+.education-block .red-divider
+{
+    margin-bottom: 20px;
+}
+
+/* PORTFOLIO */
+
+#portfolio
+{
+    background: #FF1541;
+}
+#portfolio .heading h2
+{
+    color: #fff;
+}
+
+#portfolio .thumbnail img
+{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+#portfolio .thumbnail img:hover
+{
+     filter: none;
+    -webkit-filter: none;
+}
+.realisation_content {
+	text-align: center;
+}
+.icon-add {
+	content: "\002b";
+    font-size: 220px;
+    font-weight: 100;
+    color: #151E2C;
+}
+/* CONTACT */
+
+#contact {
+	background: #FF1541;
+}
+
+#contact .heading h2 {
+	color: #fff;
+}
+
+#contact-form {
+	font-size: 20px;
+	color: #fff;
+}
+
+.form-control {
+	height: 50px;
+	font-size: 18px;
+}
+
+.comments {
+	font-style: italic;
+	font-size: 18px;
+	color: #fff;
+	height: 25px;
+}
+
+#contact-form input[type=submit] {
+	margin: 40px auto 0;
+	display:block;
+}
+
+.thank-you {
+	text-align: center;
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+/* FOOTER */
+
+footer {
+	background: #ECEEF2;
+	text-align: center;
+}
+
+/* MEDIA QUERIES */ 
