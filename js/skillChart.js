@@ -21,7 +21,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 									'#b7e500',
 									'#4ce500'
 								],
-								
+
 							}]
 						},
 
@@ -29,19 +29,13 @@ var ctx = document.getElementById('myChart').getContext('2d');
 						options: {
 							legend: {
 								display: true,
+								responsive: true,
+								maintainAspectRatio: true,
 								labels: {
 									fontColor: 'rgb(255, 99, 132)',
 									padding: 25,
 									boxWidth: 50
 								}
-							},
-							title: {
-								display: true,
-								text: 'Légende: ',
-								fontSize: 20,
-								padding: 20,
-								fontColor: '#2980B9',
-								fontStyle: 'bold'
 							},
 
 						}

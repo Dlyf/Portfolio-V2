@@ -12,7 +12,12 @@
 
 /* GENERAL */
 
-
+* {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
 
 html, body {
 	background: #ECEEF2;
@@ -21,7 +26,17 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+
 	font-weight: bold;
+	font-family: 'Slabo 27px', sans-serif;
+
+}
+
+
+
+h5 {
+	font-size: 14px;
+
 }
 
 img {
@@ -81,7 +96,7 @@ section .heading h2
     padding: 18px 50px;
     border-radius: 3px;
     transition: all 0.3s ease-in 0s;
-	background: transparent;
+		background: transparent;
 }
 
 .button1:hover
@@ -99,6 +114,7 @@ header {
 
 p {
     margin: 0;
+		font-family: 'Slabo 27px', sans-serif;
 }
 
 
@@ -120,6 +136,7 @@ nav.navbar.affix-top {
     letter-spacing: 4px;
     text-transform: uppercase;
     font-weight: bold;
+		font-family: 'Slabo 27px', sans-serif;
 
 
 }
@@ -146,7 +163,7 @@ nav.navbar.affix-top {
 .navbar-default .navbar-toggle
 {
     border-style: none;
-	background: #ECEEF2;
+		background: #ECEEF2;
 }
 
 .icon-bar
@@ -217,14 +234,12 @@ main {
 		box-shadow: grey 8px 10px 4px -8px;
 }
 
-
-
-}
 .education-block h5
 {
     color: #888;
     font-size: 15px;
     margin-bottom: 15px;
+		font-family: 'Slabo 27px', sans-serif;
 }
 .education-block .glyphicon
 {
@@ -233,14 +248,18 @@ main {
 .education-block h3
 {
      color: #d82c2e;
+		 font-family: 'Slabo 27px', sans-serif;
 }
 .education-block h4
 {
    margin-bottom: 20px;
+	 font-family: 'Cardo', serif;
+
 }
 .education-block p
 {
   font-weight: bold;
+
 }
 .education-block .red-divider
 {
@@ -283,20 +302,25 @@ main {
 
 #contact {
 	background: #FF1541;
+	font-family: 'Slabo 27px', sans-serif;
 }
 
 #contact .heading h2 {
 	color: #fff;
+	font-family: 'Slabo 27px', sans-serif;
+
 }
 
 #contact-form {
 	font-size: 20px;
 	color: #fff;
+	font-family: 'Slabo 27px', sans-serif;
 }
 
 .form-control {
 	height: 50px;
 	font-size: 18px;
+
 }
 
 .comments {
@@ -321,8 +345,79 @@ main {
 /* FOOTER */
 
 footer {
-	background: #ECEEF2;
+	background: #333;
+	padding: 20px 0 40px;
 	text-align: center;
 }
 
-/* MEDIA QUERIES */ 
+footer h5 {
+    color: #fff;
+		font-family: 'Slabo 27px', sans-serif;
+		font-weight: normal;
+
+}
+
+footer .glyphicon {
+    font-size: 25px;
+    margin: 20px;
+    color: #d82c2e;
+    height: 30px;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets */
+
+@media screen and (max-width: 991px) {
+		div.education-block {
+
+				height:460px;
+
+		}
+}
+
+@media screen and (max-width: 768px) {
+		div.col-sm-4.realisation_content {
+				width: 70%;
+				margin: auto;
+		}
+		div.education-block {
+				height: 460px;
+		}
+}
+
+/*@media screen and (max-width: 525px) {
+		.profil h1 {
+				font-size: 30px;
+		}
+}*/
+
+/* Mobiles */
+
+@media screen and (min-width: 200px)  (max-width: 368px) {
+		/*.chart-container {
+				width: 50%;
+		}*/
+		.profil h1 {
+				font-size: 24px;
+
+		}
+		div.col-sm-4.realisation_content {
+				width: 70%;
+				margin: auto;
+		}
+
+		i.glyphicon.glyphicon-plus.icon-add {
+				width: 100%;
+		}
+
+		img {
+				width: 30%
+		}
+		div.education-block {
+				height: 500px;
+		}
+		footer h5 {
+				font-size: 13px;
+		}
+}
